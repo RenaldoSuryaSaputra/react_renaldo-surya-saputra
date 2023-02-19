@@ -13,3 +13,11 @@ Salah satu VCS yang sekarang ini banyak digunakan oleh developer dalam mengemban
    - Working Directory -> Dimana suatu data file masih berada pada local storage di developer.
    - Staging Area -> Dimana file yang sudah dimodifikasi oleh developer dan siap untuk dikirim pada remote repository tetapi file tersebut belum masuk ke dalam remote repository. Untuk memasukan file ke dalam staging area dapat menggunakan perintah git add
    - Repository -> Dimana file sudah masuk ke dalam remote repository menggunakan perintah git commit dilanjutkan dengan git push.
+
+## Code Review Exploration
+[Link Repository Project](https://github.com/RenaldoSuryaSaputra/web_navbar.git)
+
+Proyek exploration yang saya buat adalah proyek mengenai pembuatan navbar pada website. Pada proyek ini terdapat 2 programmer yaitu, dev-A dan dev-B yang masing - masing memiliki branch tersendiri pada repo proyek web_navbar. Dev-A memiliki ide untuk penamaan link kategori pada navbar adalah sebagai berikut: 'About', 'Contact', 'Register/Login' dan perubahan nama website. Sedangkan dev-B memiliki perubahan kategori link pada navbar sebagai berikut: 'Contact', 'About', 'Join' dab perubahan pada warna backgroud navbar.
+Oleh karena tiap programmer memiliki ide masing - masing dalam pembuatan navbar sehingga menimbulkan konflik saat merge branch.  
+
+[Bukti Screenshots Pelesaian Conflict](https://drive.google.com/drive/folders/1gAlKYA-QuHVqLUG5lhnjXfz0DzQasuq4?usp=share_link)
