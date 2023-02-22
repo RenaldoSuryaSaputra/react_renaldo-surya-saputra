@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Create Product</title>
+</head>
+
+<body>
+   <div class="container">
+      <h1>Create Product</h1>
+      <h2>Detail Product</h2>
+
+      <div class="product-name">
+         <label for="name">Product Name: </label><br>
+         <input type="text" name="name" id="name">
+      </div>
+
+      <div class="product-category">
+         <label for="category">Product Category: </label>
+         <br>
+         <select name="product" id="product">
+            <option value=""></option>
+            <option value="technology">Technology</option>
+            <option value="toys">Toys</option>
+            <option value="cosmetic">Cosmetic</option>
+            <option value="furniture">Furniture</option>
+         </select>
+      </div>
+
+      <div class="product-freshness">
+         <label for="freshness">Product Freshness: </label><br>
+         <input type="radio" id="new" value="new">
+         <label for="new">Brand New</label><br>
+
+         <input type="radio" id="second" value="second">
+         <label for="second">Second Hand</label><br>
+
+         <input type="radio" id="refurbished" value="refurbished">
+         <label for="refurbished">Refurbished</label><br>
+      </div>
+
+      <div class="product-images">
+         <label for="image-product">Image Product</label>
+         <input type="file" name="image" id="image">
+      </div>
+
+      <div class="product-description">
+         <label for="description">Additional Description</label>
+         <br>
+         <textarea name="text" id="text" cols="40" rows="10"></textarea>
+      </div>
+      <div class="product-price">
+         <label for="price">Product Price: </label><br>
+         <input type="text" placeholder="$100" size="3">
+         <br><br>
+      </div>
+      <button type="submit" name="submit" id="submit">Submit</button>
+   </div>
+</body>
+
+</html>
