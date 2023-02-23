@@ -13,51 +13,60 @@
       <h1>Create Product</h1>
       <h2>Detail Product</h2>
 
-      <div class="product-name">
-         <label for="name">Product Name: </label><br>
-         <input type="text" name="name" id="name">
-      </div>
+      <form action="">
+         <div class="product-name">
+            <label for="name">Product Name: </label><br>
+            <input type="text" name="name" id="name" required minlength="6" maxlength="50">
+         </div>
 
-      <div class="product-category">
-         <label for="category">Product Category: </label>
-         <br>
-         <select name="product" id="product">
-            <option value=""></option>
-            <option value="technology">Technology</option>
-            <option value="toys">Toys</option>
-            <option value="cosmetic">Cosmetic</option>
-            <option value="furniture">Furniture</option>
-         </select>
-      </div>
+         <div class="product-category">
+            <label for="category">Product Category: </label>
+            <br>
+            <select name="product" id="product" required>
+               <option value=""></option>
+               <option value="technology">Technology</option>
+               <option value="toys">Toys</option>
+               <option value="cosmetic">Cosmetic</option>
+               <option value="furniture">Furniture</option>
+            </select>
+         </div>
 
-      <div class="product-freshness">
-         <label for="freshness">Product Freshness: </label><br>
-         <input type="radio" id="new" value="new">
-         <label for="new">Brand New</label><br>
+         <div class="product-freshness">
+            <label for="freshness">Product Freshness: </label><br>
+            <div>
+               <input type="radio" name="product-radio" id="new" value="new" required>
+               <label for="new">Brand New</label>
+            </div>
 
-         <input type="radio" id="second" value="second">
-         <label for="second">Second Hand</label><br>
+            <div>
+               <input type="radio" name="product-radio" id="second" value="second">
+               <label for="second">Second Hand</label>
+            </div>
 
-         <input type="radio" id="refurbished" value="refurbished">
-         <label for="refurbished">Refurbished</label><br>
-      </div>
+            <div>
+               <input type="radio" name="product-radio" id="refurbished" value="refurbished">
+               <label for="refurbished">Refurbished</label>
+            </div>
+         </div>
 
-      <div class="product-images">
-         <label for="image-product">Image Product</label>
-         <input type="file" name="image" id="image">
-      </div>
+         <div class="product-images">
+            <label for="image-product">Image Product</label>
+            <input type="file" name="image" id="image" required>
+         </div>
 
-      <div class="product-description">
-         <label for="description">Additional Description</label>
-         <br>
-         <textarea name="text" id="text" cols="40" rows="10"></textarea>
-      </div>
-      <div class="product-price">
-         <label for="price">Product Price: </label><br>
-         <input type="text" placeholder="$100" size="3">
-         <br><br>
-      </div>
-      <button type="submit" name="submit" id="submit">Submit</button>
+         <div class="product-description">
+            <label for="description">Additional Description</label>
+            <br>
+            <textarea name="text" id="text" cols="40" rows="10" required></textarea>
+         </div>
+         <div class="product-price">
+            <label for="price">Product Price: </label><br>
+            <input type="number" placeholder="$100" size="3" required style="width: 90px;">
+            <br><br>
+         </div>
+         <button type="submit" name="submit" id="submit">Submit</button>
+      </form>
+
    </div>
 </body>
 

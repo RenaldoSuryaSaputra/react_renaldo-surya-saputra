@@ -2,7 +2,7 @@
 
 ### 1. Figma
 Figma adalah sowftware prototyping yang berbasis website. Figma memiliki fitur offline yang dapat digunakan untuk aplikasi desktop baik nanti digunakan di MacOS ataupun pada Windows. Figma juga mendukung real time collaboration.
-Tools pada Figma
+Tools pada Figma:
  - Importing old Sketch Files
  - Setting up New Frames (Artboards)
  - Grid and Layout columns
