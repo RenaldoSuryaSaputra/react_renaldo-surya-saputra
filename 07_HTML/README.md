@@ -15,6 +15,7 @@ Merupakan web dokumen yang terkoneksi menggunakan *hyperlink* dan web tersebut m
 
 ### 2. Tag HTML
 Tag HTML berdasarkan visibilitas elementnya dibagi menjadi dua kategori, yaitu block element dan inline element. Berikut contoh tag pada masing - masing visibility elemen tersebut.
+
 **Block Element** 
  - `<div>` digunakan untuk mendeskripsikan suatu bagian dan sifatnya fleksible.
  - `<h1> - <h6>` merupakan tag heading.
