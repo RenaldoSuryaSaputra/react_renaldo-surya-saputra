@@ -45,7 +45,7 @@ Merupakan prinsip untuk menulis kode yang butuhkan sekarang dan tidak boleh memb
 
 Refactoring adalah proses restrukturisasi kode yang telah dibuat, dengan cara mengubah struktur kode agar lebih baik berdasarkan prinsip KISS, DRY, dan YAGNI.
 
-###$ Referensi
+#### Referensi
 
 - Modul PPT
 - [Anbidev](https://www.anbidev.com/prinsip-dasar-programmer/)
