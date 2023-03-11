@@ -114,10 +114,10 @@ Pada React juga dimungkinkan untuk melakukan render pada `List` dan operasi yang
    }
 ```
 
--**CSS in JS**
+- **CSS in JS**
 
 #### Referensi
 
-[ReactJS](reactjs.org)
-[Styling React](https://reactjs.org/docs/faq-styling.html#gatsby-focus-wrapper)
-[React Doc](https://beta.reactjs.org/learn)
+- [ReactJS](reactjs.org)
+- [Styling React](https://reactjs.org/docs/faq-styling.html#gatsby-focus-wrapper)
+- [React Doc](https://beta.reactjs.org/learn)
