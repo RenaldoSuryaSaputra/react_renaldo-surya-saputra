@@ -1,5 +1,5 @@
 import React from 'react';
-import { deleteLastData, searchData } from  '../../script';
+
 
 function ListProduct() {
   return (
@@ -51,14 +51,14 @@ function ListProduct() {
           <button
             type="button"
             className="btn btn-danger"
-            onClick={deleteLastData}
+            onclick="deleteLastData()"
           >
             Deletion
           </button>
           <button
             type="button"
             className="btn btn-light border-1 border-primary text-primary"
-            onClick={searchData}
+            onClick="searchData()"
           >
             Search
           </button>
