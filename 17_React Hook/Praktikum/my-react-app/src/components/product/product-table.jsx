@@ -2,13 +2,20 @@ import React, { useState } from 'react';
 
 
 function ListProduct({list}) {
+
+  const [dataTable, setDataTable] = useState([])
+  
+  console.log("LIST : ", list)
   const newProductList = [...list];
+  console.log("new Product List", newProductList)
 
   const handleDeleteClick = (id) => {
-    console.log(list)
-    console.log("new Product List", newProductList)
+    console.log("ID ", id)
     const index = newProductList.findIndex((product) => product.id === id);
+    console.log("INDEX ", index )
     newProductList.splice(index, 1);
+    console.log("LIST DELETE: ", list)
+    console.log("new Product List DELETE", newProductList)
   };
   return (
     <>
@@ -27,28 +34,6 @@ function ListProduct({list}) {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td scope="col">01</td>
-            <td scope="col">Susu</td>
-            <td scope="col">Food</td>
-            <td scope="col">Secondhand</td>
-            <td scope="col">1000</td>
-            <td> 
-              <button className='btn btn-danger'>Delete</button>
-              <button className='btn btn-success'>Edit</button>
-            </td>
-          </tr>
-          <tr>
-            <td scope="col">02</td>
-            <td scope="col">Soda</td>
-            <td scope="col">Drink</td>
-            <td scope="col">New</td>
-            <td scope="col">200</td>
-            <td> 
-              <button className='btn btn-danger'>Delete</button>
-              <button className='btn btn-success'>Edit</button>
-            </td>
-          </tr>
           {newProductList.map((row, index) => (
             <tr key={index}>
               <td>{row.id}</td>

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import ListProduct from '../product/product-table';
 import { nanoid } from 'nanoid';
 
 
@@ -44,7 +43,7 @@ const FormCreateProduct = () => {
 
       if (Object.keys(errorMessage).length > 0) {
          setErrorMessage(errorMessage);
-         console.log("error " , errorMessage)
+         console.log("error ", errorMessage)
       } else {
          console.log('AMAN')
          setErrorMessage({})
@@ -56,12 +55,22 @@ const FormCreateProduct = () => {
             freshness: productFreshness,
             description: productDescription,
             price: productPrice
-          };
-          setTableRow([...tableRow, newRow]);
-          console.log(tableRow)
-          e.target.reset()
+         };
+         setTableRow([...tableRow, newRow]);
+         e.target.reset()
+
       }
    }
+
+   const handleDeleteClick = (id) => {
+      const newProductList = [...tableRow];
+      const index = newProductList.findIndex((product) => product.id === id);
+      newProductList.splice(index, 1);
+      console.log("Before Delete: ", tableRow)
+      setTableRow(newProductList)
+      console.log("After Delete", newProductList)
+      alert(`Data dengan ID ${id} berhasil dihapus`)
+    };
 
 
    return (
@@ -212,7 +221,36 @@ const FormCreateProduct = () => {
                </form>
             </div>
          </div>
-         <ListProduct list={tableRow}/>
+         <div className="list text-center">
+            <h3>List product</h3>
+         </div>
+         <table id="table" className="table table-striped border border-1">
+            <thead>
+               <tr>
+                  <th scope="col">No</th>
+                  <th scope="col">Product Name</th>
+                  <th scope="col">Product Category</th>
+                  <th scope="col">Product Freshness</th>
+                  <th scope="col">Product Price</th>
+                  <th scope="col">Action</th>
+               </tr>
+            </thead>
+            <tbody>
+               {tableRow.map((row, index) => (
+                  <tr key={index}>
+                     <td>{row.id}</td>
+                     <td>{row.name}</td>
+                     <td>{row.category}</td>
+                     <td>{row.freshness}</td>
+                     <td>{row.price}</td>
+                     <td>
+                        <button className='btn btn-danger' onClick={() => handleDeleteClick(row.id)}>Delete</button>
+                        <button className='btn btn-success'>Edit</button>
+                     </td>
+                  </tr>
+               ))}
+            </tbody>
+         </table>
       </div>
    );
 }
