@@ -5,59 +5,6 @@ import Hero from '../img/hero-img.png'
 const LandingPage = () => {
    return (
       <>
-         <div className="container-fluid">
-            <nav className="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
-               <div className="container">
-                  <a className="navbar-brand" href="#">
-                     Simple header
-                  </a>
-                  <button
-                     className="navbar-toggler"
-                     type="button"
-                     data-bs-toggle="collapse"
-                     data-bs-target="#navbarNav"
-                     aria-controls="navbarNav"
-                     aria-expanded="false"
-                     aria-label="Toggle navigation"
-                  >
-                     <span className="navbar-toggler-icon" />
-                  </button>
-                  <div className="collapse navbar-collapse" id="navbarNav">
-                     <ul className="navbar-nav ms-auto">
-                        <li className="nav-item m-1">
-                           <a
-                              className="nav-link active text-white"
-                              aria-current="page"
-                              href="#"
-                           >
-                              Home
-                           </a>
-                        </li>
-                        <li className="nav-item m-1">
-                           <a className="nav-link text-primary" href="#">
-                              Features
-                           </a>
-                        </li>
-                        <li className="nav-item m-1">
-                           <a className="nav-link text-primary" href="#">
-                              Pricing
-                           </a>
-                        </li>
-                        <li className="nav-item m-1">
-                           <a className="nav-link text-primary" href="#">
-                              FAQs
-                           </a>
-                        </li>
-                        <li className="nav-item m-1">
-                           <a className="nav-link text-primary" href="#">
-                              About
-                           </a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-            </nav>
-         </div>
          <div className="main row p-5">
             <div id="description" className="col-lg-5 m-auto">
                <h1 id="moto" className="text-white ">
@@ -185,7 +132,6 @@ const LandingPage = () => {
             </p>
          </footer>
       </>
-
    );
 }
 

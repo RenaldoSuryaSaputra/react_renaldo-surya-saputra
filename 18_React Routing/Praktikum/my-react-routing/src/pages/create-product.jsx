@@ -8,11 +8,9 @@ import '../css/create-product.css'
 const PageCreateProduct = () => {
    return (
       <>
-      <Navbar />
       <Heading />
       <FormCreateProduct />
       </>
-
    );
 }
 
