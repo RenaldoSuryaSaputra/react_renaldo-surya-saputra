@@ -1,0 +1,139 @@
+* {
+   font-family: 'Poppins', sans-serif;
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   color: white;
+}
+
+
+/* Navbar Start */
+#navbar {
+   background-color: rgb(0, 0, 0);
+   border-bottom: 1px solid black;
+}
+
+#navbar .navbar-nav a {
+   margin-right: 24px;
+   color: white;
+   font-weight: 500;
+   text-decoration: none;
+   font-size: 18px;
+}
+
+#navbar .navbar-nav a:hover {
+   color: red;
+}
+
+#btn-search:hover {
+   background-color: white !important;
+   color: black !important;
+}
+
+/* Navbar End */
+
+/* Hero Start */
+
+.hero {
+   color: white;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   background-image: url('../img/hero-img.jpg');
+   background-repeat: none;
+   background-size: cover;
+   background-position: center;
+   position: relative;
+}
+
+.hero::after {
+   content: '';
+   display: block;
+   position: absolute;
+   width: 100%;
+   height: 20%;
+   bottom: 0;
+   background: linear-gradient(0deg, rgba(1, 1, 1, 1) 5%, #fffdfd00 55%);
+}
+
+.hero .content h1{
+   text-shadow: 1px 3px black;
+}
+
+.hero .content .contact{
+   display: inline-block;
+   background-color: rgba(255, 0, 0, 0.705);
+   border: 1px solid white;
+   border-radius: 30px;
+   padding: 10px;
+   text-decoration: none;
+   color: white;
+}
+
+.hero .content .contact:hover {
+   background-color: white ;
+   color: black ;
+}
+
+
+/* About */
+#about {
+   background-color: black;
+   position: relative;
+   padding: 15px;
+}
+
+#about::after {
+   content: '';
+   display: block;
+   position: absolute;
+   width: 100%;
+   height: 8%;
+   bottom: 0;
+   left: 0;
+   background: linear-gradient(0deg, rgb(27, 26, 26) 5%, black 55%)
+}
+
+/* CONTACT */
+
+#contact {
+   background-color: rgb(27, 26, 26);
+   position: relative;
+}
+
+#contact::after {
+   content: '';
+   display: block;
+   position: absolute;
+   width: 100%;
+   height: 8%;
+   bottom: 0;
+   left: 0;
+   background: linear-gradient(0deg, rgb(43, 39, 39) 5%, rgb(27, 26, 26) 55%)
+}
+
+
+/* FOOTER */
+.footer {
+   background-color: rgb(43, 39, 39) !important;
+}
+.footer p {
+   margin: 0;
+   padding: 0;
+}
+
+.footer .content {
+   color:white !important;
+   font-weight: 700;
+}
+
+.useful-links a, .our-services a, .net {
+   text-decoration: none;
+   color: grey;
+   font-size: 18px;
+}
+
+.bottom-footer {
+   color: white;
+   background-color: #dc3545 !important ;
+}
