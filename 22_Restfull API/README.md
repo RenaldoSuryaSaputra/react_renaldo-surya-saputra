@@ -1,1 +1,0 @@
-## Ringkasan belum dibuat
